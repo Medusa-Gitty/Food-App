@@ -8,8 +8,19 @@
   </head>
   <body>
     <div class="nav_bar">
-      <input type="text" placeholder="Search for a food" />
+      <input type="text" placeholder="Search for a ffdood" />
     </div>
+    <div id="food_display"></div>
   </body>
 </html>
-<script></script>
+<script>
+  async function getData(url) {
+    let res = await fetch();
+    let data = await res.json();
+
+    // return data;
+    console.log(data);
+  }
+
+  getData(`www.themealdb.com/api/json/v1/1/filter.php?c=Seafood`);
+</script>
