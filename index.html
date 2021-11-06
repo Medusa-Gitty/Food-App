@@ -15,12 +15,12 @@
 </html>
 <script>
   async function getData(url) {
-    let res = await fetch();
+    let res = await fetch(url);
     let data = await res.json();
 
     // return data;
     console.log(data);
   }
 
-  getData(`www.themealdb.com/api/json/v1/1/filter.php?c=Seafood`);
+  getData(`https://www.themealdb.com/api/json/v1/1/search.php?s=Chicken`);
 </script>
